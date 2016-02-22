@@ -1,0 +1,25 @@
+<h3>Contact</h3>
+<div class="card z-depth-3">
+  <div class="card-content">
+    <p>Do you want to know me? Please go to me follow map</p>
+  </div>
+  <div id="map"></div>
+</div>
+<style>
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('map');
+    var map = new google.maps.Map(mapDiv, {
+      center: {lat: 44.540, lng: -78.546},
+      zoom: 8
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+async defer></script>
